@@ -35,3 +35,7 @@ class EanOneThreeSchema(Schema):
 
 class EanEightSchema(Schema):
     product_number = fields.Str(required=True)
+
+
+class JanSchema(Schema):
+    product_number = fields.Str(required=True)
