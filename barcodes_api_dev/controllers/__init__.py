@@ -6,3 +6,4 @@ from controllers.isbn_ten import IsbnTenController
 from controllers.isbn_one_three import IsbnOneThreeController
 from controllers.pzn_seven import PznSevenController
 from controllers.ean_one_three import EanOneThreeController
+from controllers.ean_eight import EanEightController
