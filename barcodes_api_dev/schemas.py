@@ -19,3 +19,7 @@ class IssnSchema(Schema):
 
 class IsbnTenSchema(Schema):
     product_code = fields.Str(required=True)
+
+
+class IsbnOneThreeSchema(Schema):
+    product_code = fields.Str(required=True)
