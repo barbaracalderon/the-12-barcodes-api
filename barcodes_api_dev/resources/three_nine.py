@@ -3,7 +3,12 @@ from flask.views import MethodView
 from controllers import ThreeNineController
 from schemas import ThreeNineSchema
 
-blp = Blueprint("Barcode 39", __name__, description="Turn strings with special characters into a 39 barcode. Accepts alphanumeric and special characters.")
+blp = Blueprint(
+    "Barcode Code-39",
+    __name__,
+    description="Operations on barcode Code-39.",
+)
+
 
 @blp.route("/39")
 class Barcode(MethodView):

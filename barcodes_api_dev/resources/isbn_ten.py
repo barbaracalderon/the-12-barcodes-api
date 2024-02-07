@@ -6,7 +6,7 @@ from schemas import IsbnTenSchema
 blp = Blueprint(
     "Barcode ISBN-10",
     __name__,
-    description="Turn 10 digit codes into an ISBN-10 barcode. Accepts numeric characters and special character 'X' as check digit.",
+    description="Operations on barcode ISBN-10.",
 )
 
 

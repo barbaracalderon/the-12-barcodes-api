@@ -5,7 +5,7 @@ class OneThreeEightSchema(Schema):
     product_name = fields.Str(required=True)
 
 
-class UpcSchema(Schema):
+class UpcASchema(Schema):
     product_number = fields.Str(required=True)
 
 

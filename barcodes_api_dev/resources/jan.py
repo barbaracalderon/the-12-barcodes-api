@@ -6,7 +6,7 @@ from schemas import JanSchema
 blp = Blueprint(
     "Barcode JAN",
     __name__,
-    description="Turn 13 digit codes into a JAN barcode. Accepts numeric characters.",
+    description="Operations on barcode JAN.",
 )
 
 

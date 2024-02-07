@@ -1,19 +1,19 @@
 from typing import Dict
-from drivers import UpcHandler
+from drivers import UpcAHandler
 from flask import send_file
 import os
 from dotenv import load_dotenv
 
 
-class UpcController:
+class UpcAController:
 
     def create(self, product_number: str) -> Dict:
-        tag_path = self.__create_upc_tag(product_number)
+        tag_path = self.__create_upc_a_tag(product_number)
         formatted_response = self.__format_response(tag_path)
         return formatted_response
 
-    def __create_upc_tag(self, product_number: str) -> str:
-        upc_handler = UpcHandler()
+    def __create_upc_a_tag(self, product_number: str) -> str:
+        upc_handler = UpcAHandler()
         tag_name = upc_handler.create_upc_barcode(product_number)
         return tag_name
 

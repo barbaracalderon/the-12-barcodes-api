@@ -6,7 +6,7 @@ from schemas import EanOneFourSchema
 blp = Blueprint(
     "Barcode EAN-14",
     __name__,
-    description="Turn 14 digits into an EAN-14 barcode. Accepts numeric characters.",
+    description="Operations on barcode EAN-14.",
 )
 
 

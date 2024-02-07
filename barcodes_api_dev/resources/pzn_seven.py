@@ -6,11 +6,11 @@ from schemas import PznSevenSchema
 blp = Blueprint(
     "Barcode PZN7",
     __name__,
-    description="Turn strings into a PZN7 barcode. Accepts 7 numeric characters.",
+    description="Operations on barcode PZN7.",
 )
 
 
-@blp.route("/pzn-7")
+@blp.route("/pzn7")
 class Barcode(MethodView):
     @blp.arguments(PznSevenSchema)
     def post(self, barcode_data):

@@ -3,10 +3,14 @@ from flask.views import MethodView
 from controllers import OneThreeEightController
 from schemas import OneThreeEightSchema
 
-blp = Blueprint("Barcode 138", __name__, description="Turn strings into a 138 barcode. Accepts alphanumeric characters.")
+blp = Blueprint(
+    "Barcode Code-138",
+    __name__,
+    description="Operations on barcode Code138",
+)
 
 
-@blp.route("/138")
+@blp.route("/code-138")
 class Barcode(MethodView):
     @blp.arguments(OneThreeEightSchema)
     def post(self, barcode_data):

@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_smorest import Api
 from resources.one_three_eight import blp as OneThreeEightBlueprint
-from resources.upc import blp as UpcBlueprint
+from resources.upc_a import blp as UpcABlueprint
 from resources.three_nine import blp as ThreeNineBlueprint
 from resources.issn import blp as IssnBlueprint
 from resources.isbn_ten import blp as IsbnTenBlueprint
@@ -30,7 +30,7 @@ def create_app():
     api = Api(app)
 
     api.register_blueprint(OneThreeEightBlueprint)
-    api.register_blueprint(UpcBlueprint)
+    api.register_blueprint(UpcABlueprint)
     api.register_blueprint(ThreeNineBlueprint)
     api.register_blueprint(IssnBlueprint)
     api.register_blueprint(IsbnTenBlueprint)

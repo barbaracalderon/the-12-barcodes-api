@@ -7,7 +7,7 @@ from schemas import GsOneOneTwoEightSchema
 blp = Blueprint(
     "Barcode GS1-128",
     __name__,
-    description="Turn strings into an GS1-128 barcode. Accepts alphanumeric characters.",
+    description="Operations on barcode GS1-128.",
 )
 
 

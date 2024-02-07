@@ -6,7 +6,7 @@ from schemas import IssnSchema
 blp = Blueprint(
     "Barcode ISSN",
     __name__,
-    description="Turn 8 digit codes into an ISSN barcode. Accepts alphanumeric characters. Letters must be uppercase.",
+    description="Operations on barcode ISSN.",
 )
 
 

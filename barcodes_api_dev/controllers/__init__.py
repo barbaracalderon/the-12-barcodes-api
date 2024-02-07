@@ -1,5 +1,5 @@
 from controllers.one_three_eight import OneThreeEightController
-from controllers.upc import UpcController
+from controllers.upc_a import UpcAController
 from controllers.three_nine import ThreeNineController
 from controllers.issn import IssnController
 from controllers.isbn_ten import IsbnTenController
