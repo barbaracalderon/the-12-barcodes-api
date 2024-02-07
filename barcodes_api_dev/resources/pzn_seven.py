@@ -10,7 +10,7 @@ blp = Blueprint(
 )
 
 
-@blp.route("/pzn7")
+@blp.route("/pzn-7")
 class Barcode(MethodView):
     @blp.arguments(PznSevenSchema)
     def post(self, barcode_data):
