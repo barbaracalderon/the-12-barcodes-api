@@ -10,6 +10,7 @@ from resources.pzn_seven import blp as PznSevenBlueprint
 from resources.ean_one_three import blp as EanOneThreeBlueprint
 from resources.ean_eight import blp as EanEightBlueprint
 from resources.jan import blp as JanBlueprint
+from resources.ean_one_four import blp as EanOneFourBlueprint
 
 
 def create_app():
@@ -37,6 +38,7 @@ def create_app():
     api.register_blueprint(EanOneThreeBlueprint)
     api.register_blueprint(EanEightBlueprint)
     api.register_blueprint(JanBlueprint)
+    api.register_blueprint(EanOneFourBlueprint)
 
     return app
 

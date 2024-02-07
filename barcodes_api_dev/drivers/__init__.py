@@ -8,3 +8,4 @@ from drivers.pzn_seven_handler import PznSevenHandler
 from drivers.ean_one_three_handler import EanOneThreeHandler
 from drivers.ean_eight_handler import EanEightHandler
 from drivers.jan_handler import JanHandler
+from drivers.ean_one_four_handler import EanOneFourHandler

@@ -8,3 +8,4 @@ from controllers.pzn_seven import PznSevenController
 from controllers.ean_one_three import EanOneThreeController
 from controllers.ean_eight import EanEightController
 from controllers.jan import JanController
+from controllers.ean_one_four import EanOneFourController
