@@ -6,7 +6,7 @@ from schemas import OneThreeEightSchema
 blp = Blueprint("Barcode 138", __name__, description="Turn strings into a 138 barcode. Accepts alphanumeric characters.")
 
 
-@blp.route("/one_three_eight")
+@blp.route("/138")
 class Barcode(MethodView):
     @blp.arguments(OneThreeEightSchema)
     def post(self, barcode_data):
