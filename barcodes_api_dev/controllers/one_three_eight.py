@@ -1,5 +1,5 @@
 from typing import Dict
-from drivers.one_three_eight_handler import OneThreeEightHandler
+from drivers import OneThreeEightHandler
 from flask import send_file
 import os
 from dotenv import load_dotenv

@@ -1,5 +1,5 @@
 from typing import Dict
-from drivers.upc_handler import UpcHandler
+from drivers import UpcHandler
 from flask import send_file
 import os
 from dotenv import load_dotenv
