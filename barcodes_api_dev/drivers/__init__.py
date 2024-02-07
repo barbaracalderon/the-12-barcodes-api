@@ -1,5 +1,5 @@
 from drivers.issn_handler import IssnHandler
-from drivers.one_three_eight_handler import OneThreeEightHandler
+from drivers.one_two_eight_handler import OneTwoEightHandler
 from drivers.three_nine_handler import ThreeNineHandler
 from drivers.upc_a_handler import UpcAHandler
 from drivers.isbn_ten_handler import IsbnTenHandler

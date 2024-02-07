@@ -1,4 +1,4 @@
-from controllers.one_three_eight import OneThreeEightController
+from controllers.one_two_eight import OneTwoEightController
 from controllers.upc_a import UpcAController
 from controllers.three_nine import ThreeNineController
 from controllers.issn import IssnController

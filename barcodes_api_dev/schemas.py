@@ -1,7 +1,7 @@
 from marshmallow import Schema, fields
 
 
-class OneThreeEightSchema(Schema):
+class OneTwoEightSchema(Schema):
     product_name = fields.Str(required=True)
 
 

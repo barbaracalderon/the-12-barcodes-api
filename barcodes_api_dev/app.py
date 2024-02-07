@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_smorest import Api
-from resources.one_three_eight import blp as OneThreeEightBlueprint
+from resources.one_two_eight import blp as OneTwoEightBlueprint
 from resources.upc_a import blp as UpcABlueprint
 from resources.three_nine import blp as ThreeNineBlueprint
 from resources.issn import blp as IssnBlueprint
@@ -29,7 +29,7 @@ def create_app():
 
     api = Api(app)
 
-    api.register_blueprint(OneThreeEightBlueprint)
+    api.register_blueprint(OneTwoEightBlueprint)
     api.register_blueprint(UpcABlueprint)
     api.register_blueprint(ThreeNineBlueprint)
     api.register_blueprint(IssnBlueprint)
