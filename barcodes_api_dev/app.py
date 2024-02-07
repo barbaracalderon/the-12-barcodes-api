@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from flask_smorest import Api
 from resources.one_three_eight import blp as OneThreeEightBlueprint
 from resources.upc import blp as UpcBlueprint
+from resources.three_nine import blp as ThreeNineBlueprint
 
 def create_app():
     app = Flask(__name__)
@@ -20,6 +21,7 @@ def create_app():
 
     api.register_blueprint(OneThreeEightBlueprint)
     api.register_blueprint(UpcBlueprint)
+    api.register_blueprint(ThreeNineBlueprint)
 
     return app
 
