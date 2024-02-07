@@ -43,3 +43,7 @@ class JanSchema(Schema):
 
 class EanOneFourSchema(Schema):
     product_number = fields.Str(required=True)
+
+
+class GsOneOneTwoEightSchema(Schema):
+    product_code = fields.Str(required=True)
