@@ -5,7 +5,7 @@ from schemas import UpcSchema
 
 blp = Blueprint("Barcode UPC-A", __name__, description="Turn 11 numbers into an UPC-A barcode. Accepts numeric characters.")
 
-@blp.route("/upc")
+@blp.route("/upc-a")
 class Barcode(MethodView):
     @blp.arguments(UpcSchema)
     def post(self, barcode_data):
