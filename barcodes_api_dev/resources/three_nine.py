@@ -10,7 +10,7 @@ blp = Blueprint(
 )
 
 
-@blp.route("/39")
+@blp.route("/code-39")
 class Barcode(MethodView):
     @blp.arguments(ThreeNineSchema)
     def post(self, barcode_data):
