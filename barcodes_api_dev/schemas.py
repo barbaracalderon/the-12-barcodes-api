@@ -8,5 +8,10 @@ class OneThreeEightSchema(Schema):
 class UpcSchema(Schema):
     product_number = fields.Str(required=True)
 
+
 class ThreeNineSchema(Schema):
     product_name = fields.Str(required=True)
+
+
+class IssnSchema(Schema):
+    product_code = fields.Str(required=True)

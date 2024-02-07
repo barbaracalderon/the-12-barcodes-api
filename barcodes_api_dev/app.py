@@ -3,6 +3,8 @@ from flask_smorest import Api
 from resources.one_three_eight import blp as OneThreeEightBlueprint
 from resources.upc import blp as UpcBlueprint
 from resources.three_nine import blp as ThreeNineBlueprint
+from resources.issn import blp as IssnBlueprint
+
 
 def create_app():
     app = Flask(__name__)
@@ -22,6 +24,7 @@ def create_app():
     api.register_blueprint(OneThreeEightBlueprint)
     api.register_blueprint(UpcBlueprint)
     api.register_blueprint(ThreeNineBlueprint)
+    api.register_blueprint(IssnBlueprint)
 
     return app
 
