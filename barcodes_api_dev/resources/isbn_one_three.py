@@ -16,4 +16,4 @@ class Barcode(MethodView):
     def post(self, barcode_data):
         isbn_one_three_controller = IsbnOneThreeController()
         response = isbn_one_three_controller.create(barcode_data.get("product_code"))
-        return response
+        return response, 201

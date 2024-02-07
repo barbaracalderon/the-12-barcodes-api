@@ -16,4 +16,4 @@ class Barcode(MethodView):
     def post(self, barcode_data):
         issn_controller = IssnController()
         response = issn_controller.create(barcode_data.get("product_code"))
-        return response
+        return response, 201
