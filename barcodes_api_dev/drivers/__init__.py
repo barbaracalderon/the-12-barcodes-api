@@ -4,3 +4,4 @@ from drivers.three_nine_handler import ThreeNineHandler
 from drivers.upc_handler import UpcHandler
 from drivers.isbn_ten_handler import IsbnTenHandler
 from drivers.isbn_one_three_handler import IsbnOneThreeHandler
+from drivers.pzn_seven_handler import PznSevenHandler
