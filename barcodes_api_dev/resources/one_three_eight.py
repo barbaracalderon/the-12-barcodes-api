@@ -1,6 +1,5 @@
-from flask_smorest import Blueprint, abort
+from flask_smorest import Blueprint
 from flask.views import MethodView
-from flask import request
 from controllers import OneThreeEightController
 from schemas import OneThreeEightSchema
 
