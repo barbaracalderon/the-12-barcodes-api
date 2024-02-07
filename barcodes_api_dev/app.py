@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_smorest import Api
-from resources.barcode import blp as BarcodeBlueprint
-
+# from resources.one_three_eight import blp as BarcodeBlueprint
+from resources.one_three_eight import blp as OneThreeEightBlueprint
 
 def create_app():
     app = Flask(__name__)
@@ -18,7 +18,7 @@ def create_app():
 
     api = Api(app)
 
-    api.register_blueprint(BarcodeBlueprint)
+    api.register_blueprint(OneThreeEightBlueprint)
 
     return app
 

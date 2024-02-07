@@ -1,21 +1,20 @@
 from typing import Dict
-from drivers.barcode_handler import BarcodeHandler
+from drivers.one_three_eight_handler import OneThreeEightHandler
 from flask import send_file
-import base64
 import os
 from dotenv import load_dotenv
 
 
-class BarcodeController:
+class OneThreeEightController:
 
     def create(self, product_name: str) -> Dict:
-        tag_path = self.__create_barcode_tag(product_name)
+        tag_path = self.__create_one_three_eight_tag(product_name)
         formatted_response = self.__format_response(tag_path)
         return formatted_response
 
-    def __create_barcode_tag(self, product_name: str) -> str:
-        barcode_handler = BarcodeHandler()
-        tag_name = barcode_handler.create_barcode(product_name)
+    def __create_one_three_eight_tag(self, product_name: str) -> str:
+        one_three_eight_handler = OneThreeEightHandler()
+        tag_name = one_three_eight_handler.create_one_three_eight_barcode(product_name)
         return tag_name
 
     def __format_response(self, tag_name: str) -> Dict:
