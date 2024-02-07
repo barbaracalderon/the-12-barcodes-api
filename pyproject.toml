@@ -6,6 +6,11 @@ authors = ["barbaracalderon <bcalderoni.ti@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+Flask = "^3.0.2"
+python-barcode = "^0.15.1"
+flask-smorest = "^0.42.3"
+pillow = "^10.2.0"
+python-dotenv = "^1.0.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
