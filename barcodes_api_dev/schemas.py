@@ -27,3 +27,7 @@ class IsbnOneThreeSchema(Schema):
 
 class PznSevenSchema(Schema):
     product_number = fields.Str(required=True)
+
+
+class EanOneThreeSchema(Schema):
+    product_number = fields.Str(required=True)

@@ -7,6 +7,7 @@ from resources.issn import blp as IssnBlueprint
 from resources.isbn_ten import blp as IsbnTenBlueprint
 from resources.isbn_one_three import blp as IsbnOneThreeBlueprint
 from resources.pzn_seven import blp as PznSevenBlueprint
+from resources.ean_one_three import blp as EanOneThreeBlueprint
 
 
 def create_app():
@@ -31,6 +32,7 @@ def create_app():
     api.register_blueprint(IsbnTenBlueprint)
     api.register_blueprint(IsbnOneThreeBlueprint)
     api.register_blueprint(PznSevenBlueprint)
+    api.register_blueprint(EanOneThreeBlueprint)
 
     return app
 
