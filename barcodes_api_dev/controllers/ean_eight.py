@@ -1,5 +1,5 @@
 from typing import Dict
-from drivers import EanEightHandler, ResponseFormatHandler
+from models.drivers import EanEightHandler, ResponseFormatHandler
 
 
 class EanEightController:

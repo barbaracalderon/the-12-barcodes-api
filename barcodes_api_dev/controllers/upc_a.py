@@ -1,5 +1,5 @@
 from typing import Dict
-from drivers import UpcAHandler, ResponseFormatHandler
+from models.drivers import UpcAHandler, ResponseFormatHandler
 
 
 class UpcAController:

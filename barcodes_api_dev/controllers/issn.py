@@ -1,5 +1,5 @@
 from typing import Dict
-from drivers import IssnHandler, ResponseFormatHandler
+from models.drivers import IssnHandler, ResponseFormatHandler
 
 
 class IssnController:

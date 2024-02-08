@@ -1,5 +1,5 @@
 from typing import Dict
-from drivers import PznSevenHandler, ResponseFormatHandler
+from models.drivers import PznSevenHandler, ResponseFormatHandler
 
 
 class PznSevenController:

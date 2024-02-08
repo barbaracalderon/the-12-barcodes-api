@@ -1,17 +1,17 @@
 from flask import Flask, request, jsonify
 from flask_smorest import Api
-from resources.one_two_eight import blp as OneTwoEightBlueprint
-from resources.upc_a import blp as UpcABlueprint
-from resources.three_nine import blp as ThreeNineBlueprint
-from resources.issn import blp as IssnBlueprint
-from resources.isbn_ten import blp as IsbnTenBlueprint
-from resources.isbn_one_three import blp as IsbnOneThreeBlueprint
-from resources.pzn_seven import blp as PznSevenBlueprint
-from resources.ean_one_three import blp as EanOneThreeBlueprint
-from resources.ean_eight import blp as EanEightBlueprint
-from resources.jan import blp as JanBlueprint
-from resources.ean_one_four import blp as EanOneFourBlueprint
-from resources.gs_one_one_two_eight import blp as GsOneOneTwoEightBlueprint
+from views.one_two_eight import blp as OneTwoEightBlueprint
+from views.upc_a import blp as UpcABlueprint
+from views.three_nine import blp as ThreeNineBlueprint
+from views.issn import blp as IssnBlueprint
+from views.isbn_ten import blp as IsbnTenBlueprint
+from views.isbn_one_three import blp as IsbnOneThreeBlueprint
+from views.pzn_seven import blp as PznSevenBlueprint
+from views.ean_one_three import blp as EanOneThreeBlueprint
+from views.ean_eight import blp as EanEightBlueprint
+from views.jan import blp as JanBlueprint
+from views.ean_one_four import blp as EanOneFourBlueprint
+from views.gs_one_one_two_eight import blp as GsOneOneTwoEightBlueprint
 
 
 def create_app():

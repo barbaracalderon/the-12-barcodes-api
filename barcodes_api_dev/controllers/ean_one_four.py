@@ -1,5 +1,5 @@
 from typing import Dict
-from drivers import EanOneFourHandler, ResponseFormatHandler
+from models.drivers import EanOneFourHandler, ResponseFormatHandler
 
 
 class EanOneFourController:
