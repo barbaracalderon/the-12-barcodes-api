@@ -3,3 +3,4 @@ from models.ean_one_four_model import EanOneFourModel
 from models.ean_one_three_model import EanOneThreeModel
 from models.gs_one_one_two_eight_model import GsOneOneTwoEightModel
 from models.isbn_one_three_model import IsbnOneThreeModel
+from models.isbn_ten_model import IsbnTenModel

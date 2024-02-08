@@ -1,5 +1,7 @@
 from typing import Dict
 from models.drivers import IsbnTenHandler, ResponseFormatHandler
+from models import IsbnTenModel
+from flask import jsonify
 
 
 class IsbnTenController:
@@ -15,3 +17,6 @@ class IsbnTenController:
         tag_name = isbn_ten_handler.create_isbn_ten_barcode(product_code)
         return tag_name
     
+    def get_data(self) -> Dict:
+        isbn_ten_model = IsbnTenModel()
+        return jsonify(isbn_ten_model.data)
