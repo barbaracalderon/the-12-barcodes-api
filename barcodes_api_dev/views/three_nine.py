@@ -12,8 +12,15 @@ blp = Blueprint(
 
 @blp.route("/code-39")
 class Barcode(MethodView):
+
+    def __init__(self):
+        self.three_nine_controller = ThreeNineController()
+
     @blp.arguments(ThreeNineSchema)
     def post(self, barcode_data):
-        three_nine_controller = ThreeNineController()
-        response = three_nine_controller.create(barcode_data.get("product_name"))
+        response = self.three_nine_controller.create(barcode_data.get("product_name"))
         return response, 201
+
+    def get(self):
+        response = self.three_nine_controller.get_data()
+        return response, 200

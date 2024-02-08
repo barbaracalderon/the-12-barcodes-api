@@ -1,5 +1,7 @@
 from typing import Dict
 from models.drivers import ThreeNineHandler, ResponseFormatHandler
+from models import ThreeNineModel
+from flask import jsonify
 
 
 class ThreeNineController:
@@ -14,3 +16,7 @@ class ThreeNineController:
         three_nine_handler = ThreeNineHandler()
         tag_name = three_nine_handler.create_three_nine_barcode(product_name)
         return tag_name
+
+    def get_data(self) -> Dict:
+        three_nine_model = ThreeNineModel()
+        return jsonify(three_nine_model.data)
