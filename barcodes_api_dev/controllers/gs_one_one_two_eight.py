@@ -1,5 +1,7 @@
 from typing import Dict
 from models.drivers import GsOneOneTwoEightHandler, ResponseFormatHandler
+from models import GsOneOneTwoEightModel
+from flask import jsonify
 
 
 class GsOneOneTwoEightController:
@@ -17,3 +19,6 @@ class GsOneOneTwoEightController:
         )
         return tag_name
 
+    def get_data(self) -> Dict:
+        gs_one_one_two_eight_model = GsOneOneTwoEightModel()
+        return jsonify(gs_one_one_two_eight_model.data)
