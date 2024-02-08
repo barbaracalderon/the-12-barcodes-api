@@ -3,7 +3,7 @@ class IsbnTenModel:
     def __init__(self):
         self.data = {
             "name": "International Standard Book Number 10 (ISBN-10)",
-            "previous_name": [""],
+            "previous_name": "",
             "type": "isbn-10",
             "place_of_origin": "International",
             "year": "1970",

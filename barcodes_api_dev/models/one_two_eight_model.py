@@ -3,7 +3,7 @@ class OneTwoEightModel:
     def __init__(self):
         self.data = {
             "name": "Code 128",
-            "previous_name": ["UCC/EAN-128"],
+            "previous_name": "UCC/EAN-128",
             "type": "code-128",
             "place_of_origin": "United States",
             "year": "1977",

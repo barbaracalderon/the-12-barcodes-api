@@ -3,7 +3,7 @@ class EanEightModel:
     def __init__(self):
         self.data = {
             "name": "European Article Number 8 (EAN-8)",
-            "previous_name": [""],
+            "previous_name": "",
             "type": "ean-8",
             "place_of_origin": "Europe",
             "year": "1977",

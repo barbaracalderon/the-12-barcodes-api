@@ -3,7 +3,7 @@ class UpcAModel:
     def __init__(self):
         self.data = {
             "name": "Universal Product Code-A (UPC-A)",
-            "previous_name": [""],
+            "previous_name": "",
             "type": "upc-a",
             "place_of_origin": "United States",
             "year": "1974",

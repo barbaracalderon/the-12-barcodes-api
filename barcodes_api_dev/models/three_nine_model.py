@@ -3,7 +3,7 @@ class ThreeNineModel:
     def __init__(self):
         self.data = {
             "name": "Code 39",
-            "previous_name": [""],
+            "previous_name": "",
             "type": "code-39",
             "place_of_origin": "United States",
             "year": "1974",

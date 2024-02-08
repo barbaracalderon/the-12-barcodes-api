@@ -3,7 +3,7 @@ class EanOneThreeModel:
     def __init__(self):
         self.data = {
             "name": "European Article Number 13 (EAN-13)",
-            "previous_name": [""],
+            "previous_name": "",
             "type": "ean-13",
             "place_of_origin": "Europe",
             "year": "1977",
