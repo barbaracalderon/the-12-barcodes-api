@@ -12,8 +12,15 @@ blp = Blueprint(
 
 @blp.route("/pzn7")
 class Barcode(MethodView):
+
+    def __init__(self):
+        self.pzn_seven_controller = PznSevenController()
+
     @blp.arguments(PznSevenSchema)
     def post(self, barcode_data):
-        pzn_seven_controller = PznSevenController()
-        response = pzn_seven_controller.create(barcode_data.get("product_number"))
+        response = self.pzn_seven_controller.create(barcode_data.get("product_number"))
         return response, 201
+
+    def get(self):
+        response = self.pzn_seven_controller.get_data()
+        return response, 200

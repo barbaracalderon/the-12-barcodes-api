@@ -1,5 +1,7 @@
 from typing import Dict
 from models.drivers import PznSevenHandler, ResponseFormatHandler
+from models import PznSevenModel
+from flask import jsonify
 
 
 class PznSevenController:
@@ -14,3 +16,7 @@ class PznSevenController:
         pzn_seven_handler = PznSevenHandler()
         tag_name = pzn_seven_handler.create_pzn_seven_barcode(product_number)
         return tag_name
+
+    def get_data(self) -> Dict:
+        pzn_seven_model = PznSevenModel()
+        return jsonify(pzn_seven_model.data)
