@@ -12,13 +12,17 @@ blp = Blueprint(
 
 @blp.route("/ean-14")
 class Barcode(MethodView):
+
+    def __init__(self):
+        self.ean_one_four_controller = EanOneFourController()
+
     @blp.arguments(EanOneFourSchema)
     def post(self, barcode_data):
-        ean_one_four_controller = EanOneFourController()
-        response = ean_one_four_controller.create(barcode_data.get("product_number"))
+        response = self.ean_one_four_controller.create(
+            barcode_data.get("product_number")
+        )
         return response, 201
 
     def get(self):
-        ean_one_four_controller = EanOneFourController()
-        response = ean_one_four_controller.get_data()
+        response = self.ean_one_four_controller.get_data()
         return response, 200
