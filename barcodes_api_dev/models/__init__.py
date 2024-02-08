@@ -6,3 +6,4 @@ from models.isbn_one_three_model import IsbnOneThreeModel
 from models.isbn_ten_model import IsbnTenModel
 from models.issn_model import IssnModel
 from models.jan_model import JanModel
+from models.one_two_eight_model import OneTwoEightModel

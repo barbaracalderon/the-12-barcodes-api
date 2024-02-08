@@ -1,5 +1,7 @@
 from typing import Dict
 from models.drivers import OneTwoEightHandler, ResponseFormatHandler
+from models import OneTwoEightModel
+from flask import jsonify
 
 
 class OneTwoEightController:
@@ -14,3 +16,7 @@ class OneTwoEightController:
         one_two_eight_handler = OneTwoEightHandler()
         tag_name = one_two_eight_handler.create_one_two_eight_barcode(product_name)
         return tag_name
+
+    def get_data(self) -> Dict:
+        one_two_eight_model = OneTwoEightModel()
+        return jsonify(one_two_eight_model.data)
