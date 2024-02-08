@@ -17,3 +17,8 @@ class Barcode(MethodView):
         ean_eight_controller = EanEightController()
         response = ean_eight_controller.create(barcode_data.get("product_number"))
         return response, 201
+
+    def get(self):
+        ean_eight_controller = EanEightController()
+        response = ean_eight_controller.get_data()
+        return response, 200

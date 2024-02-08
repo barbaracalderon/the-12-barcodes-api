@@ -1,0 +1,1 @@
+from models.ean_eight_model import EanEightModel
