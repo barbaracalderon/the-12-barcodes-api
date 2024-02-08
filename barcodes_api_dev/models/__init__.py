@@ -9,3 +9,4 @@ from models.jan_model import JanModel
 from models.one_two_eight_model import OneTwoEightModel
 from models.pzn_seven_model import PznSevenModel
 from models.three_nine_model import ThreeNineModel
+from models.upc_a_model import UpcAModel

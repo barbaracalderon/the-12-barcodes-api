@@ -12,8 +12,15 @@ blp = Blueprint(
 
 @blp.route("/upc-a")
 class Barcode(MethodView):
+
+    def __init__(self):
+        self.upc_a_controller = UpcAController()
+
     @blp.arguments(UpcASchema)
     def post(self, barcode_data):
-        upc_a_controller = UpcAController()
-        response = upc_a_controller.create(barcode_data.get("product_number"))
+        response = self.upc_a_controller.create(barcode_data.get("product_number"))
         return response, 201
+
+    def get(self):
+        response = self.upc_a_controller.get_data()
+        return response, 200
