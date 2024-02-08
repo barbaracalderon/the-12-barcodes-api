@@ -1,6 +1,7 @@
 from typing import Dict
 from models.drivers import JanHandler, ResponseFormatHandler
-
+from models import JanModel
+from flask import jsonify
 
 
 class JanController:
@@ -16,3 +17,6 @@ class JanController:
         tag_name = jan_handler.create_jan_barcode(product_number)
         return tag_name
 
+    def get_data(self) -> Dict:
+        jan_model = JanModel()
+        return jsonify(jan_model.data)

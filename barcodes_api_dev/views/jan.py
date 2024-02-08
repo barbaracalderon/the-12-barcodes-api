@@ -12,8 +12,15 @@ blp = Blueprint(
 
 @blp.route("/jan")
 class Barcode(MethodView):
+
+    def __init__(self):
+        self.jan_controller = JanController()
+
     @blp.arguments(JanSchema)
     def post(self, barcode_data):
-        jan_controller = JanController()
-        response = jan_controller.create(barcode_data.get("product_number"))
+        response = self.jan_controller.create(barcode_data.get("product_number"))
         return response, 201
+
+    def get(self):
+        response = self.jan_controller.get_data()
+        return response, 200
