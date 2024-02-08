@@ -1,5 +1,7 @@
 from typing import Dict
 from models.drivers import EanOneThreeHandler, ResponseFormatHandler
+from models import EanOneThreeModel
+from flask import jsonify
 
 
 class EanOneThreeController:
@@ -14,3 +16,7 @@ class EanOneThreeController:
         ean_one_three_handler = EanOneThreeHandler()
         tag_name = ean_one_three_handler.create_ean_one_three_barcode(product_number)
         return tag_name
+
+    def get_data(self) -> Dict:
+        ean_one_three_model = EanOneThreeModel()
+        return jsonify(ean_one_three_model.data)

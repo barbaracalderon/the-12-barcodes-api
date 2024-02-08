@@ -1,2 +1,3 @@
 from models.ean_eight_model import EanEightModel
 from models.ean_one_four_model import EanOneFourModel
+from models.ean_one_three_model import EanOneThreeModel
