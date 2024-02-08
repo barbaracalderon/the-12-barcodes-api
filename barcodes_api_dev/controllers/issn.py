@@ -1,5 +1,7 @@
 from typing import Dict
 from models.drivers import IssnHandler, ResponseFormatHandler
+from models import IssnModel
+from flask import jsonify
 
 
 class IssnController:
@@ -14,3 +16,7 @@ class IssnController:
         issn_handler = IssnHandler()
         tag_name = issn_handler.create_issn_barcode(product_code)
         return tag_name
+
+    def get_data(self) -> Dict:
+        issn_model = IssnModel()
+        return jsonify(issn_model.data)
