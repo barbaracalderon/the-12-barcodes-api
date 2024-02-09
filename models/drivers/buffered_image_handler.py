@@ -3,7 +3,7 @@ from io import BytesIO
 
 class BufferedImageHandler:
 
-    def create_buffered_image(barcode_tag):
+    def create_buffer_image(self, barcode_tag):
         image_buffer = BytesIO()
 
         barcode_tag.write(image_buffer)
