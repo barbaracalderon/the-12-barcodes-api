@@ -114,7 +114,7 @@
 					and accuracy in data collection and processing.
 				</p>
 				<p>
-					<strong>Regional Conventions</strong>: ometimes, certain types of barcodes are just more popular or
+					<strong>Regional Conventions</strong>: ometimes, certain types of barcodes are just more popularfor
 					commonly used in specific geographic regions. This could be due to historical reasons, industry
 					preferences, or simply because it's what everyone in that area is used to. For example, in the
 					United States, UPC barcodes are commonly used in retail environments, while EAN
@@ -132,6 +132,14 @@
 					format to cater to their specific needs.
 				</p>
 
+				<h2 class="major">PS.</h2>
+				<p>
+					If you consider an information here to be wrong, please, I kindly ask you to contact me so I can
+					make the necessary changes. Thank you.
+				</p>
+				<p>
+					<em>Barbara Calderon.</em>
+				</p>
 
 			</article>
 
@@ -144,55 +152,63 @@
 				</p>
 				<p>
 					I'm Barbara Calderon, a software developer from Brazil who
-					recently graduated with a Bachelor's Degree in Information Systems. This project represents a
+					recently graduated with a Bachelor's Degree in Information Systems. This project represents
 					another step in my journey to enhance my skills and understanding of web development.
 				</p>
 				<p>
-					Crafted with a focus on education, this RESTful API serves as a playground for me to explore and
-					master technologies from the Flask ecosystem and some software design. Embracing the
-					<strong>Model-View-Controller (MVC) architecture</strong>, I strive for a clean, organized codebase
-					that fosters <strong>maintainability and scalability</strong> - in the rare chance this project ever
-					grows to something unexpected.
+					Crafted with a focus on educating myself a bit more, this RESTful API serves as a playground for me
+					to explore and master technologies from the Flask ecosystem and some software design. Embracing the
+					<strong>Model-View-Controller (MVC) architecture</strong> and <strong>DRY principle</strong>, I
+					strive for a clean, organized codebase that fosters <strong>maintainability and scalability</strong>
+					- in the rare chance this project ever grows to something unexpected.
 				</p>
 				<p>
 					Here, you'll find only two HTTP methods: POST and GET.
 				</p>
 				<p>
-					With POST, you can send data to
-					encode and receive the corresponding barcode image for the specified endpoint. Meanwhile, GET
-					returns a JSON response containing information about the barcode associated with your requested
-					endpoint. The key here is <strong>simplicity and practicality.</strong> More on this in the Swagger
-					tab.
+					With POST, you can send data to encode and receive the corresponding barcode image for the specified
+					endpoint. Meanwhile, GET returns a JSON response containing information about the barcode associated
+					with your requested endpoint. The key here is <strong>simplicity and practicality.</strong> More on
+					this in the Swagger tab in the main page.
 				</p>
 				<p>
 					To ensure clarity and ease of use, I've meticulously documented this project according to the
 					<strong>OpenAPI standard with Swagger</strong>. Drawing inspiration from <strong>HTML5UP</strong>
 					templates, I've added my personal touch to the landing page design, making tweaks for a customized
-					look and feel. Additionally, the project features stunning imagery sourced from
-					<strong>Unsplash</strong>, adding visual appeal and personality.
+					look and feel. Check them out, they're great. Additionally, the project features stunning imagery
+					sourced from <strong>Unsplash</strong>, adding visual appeal and personality.
 				</p>
 				<p>
-					One unique aspect of this project is its reliance on lightweight data processing, foregoing the need
-					for a traditional database. This decision reflects my commitment to simplicity. You need a barcode
-					image, <strong>you get it</strong>. You need a little bit of information for that type of barcode,
-					<strong>you get it</strong>.
+					One unique aspect of this project is its reliance on <strong>lightweight data processing</strong>,
+					foregoing the need for a traditional database. To achieve this, I crafted a buffer to handle images
+					so it deals with image data directly in memory, avoiding the need to write it down. This may impact
+					latency since the images are served without the need for a retrieval move. No need for a persistent
+					storage.
+				</p>
+				<p>
+					This decision reflects my commitment to simplicity. You need a barcode image, <strong>you get
+						it</strong>. You need a little bit of information for that type of barcode, <strong>you get
+						it</strong>.
 				</p>
 				<p>
 					I've chosen to deploy this project on the <strong>Render</strong> platform, one, because they have a
-					free
-					service and two, their reliability for users like you. With Render's robust infrastructure and
+					free service and two, their reliability for users like you. With Render's robust infrastructure and
 					seamless deployment process, I can focus on delivering a polished and reliable API experience.
 					Because it is deployed on a free server, it may take a while to start the engines the first time.
 					Please, keep this in mind when you visit this URL.
 				</p>
 				<p>
-					Lastly, this project is hosted in a <strong>Github</strong> repository.
+					Lastly, this project is hosted in a <strong>Github</strong> repository. If code is something that
+					interests you, go check it out.
 				</p>
 				<p>
-					Time to plug the machines.
+					Now it's time to plug the machines.
 				</p>
 				<p>
 					Thank you for dropping by.
+				</p>
+				<p>
+					<em>Barbara Calderon.</em>
 				</p>
 			</article>
 
@@ -202,8 +218,8 @@
 				<h2 class="major">Swagger</h2>
 				<span class="image main"><img src="static/images/pic03.jpg" alt="" /></span>
 				<h3 class="major">Swagger-UI</h3>
-				<p>Check the documentation at <a
-						href="https://the-12-barcodes-api.onrender.com/swagger-ui" target="_blank">"/swagger-ui"</a>, a user-friendly
+				<p>Check the documentation at <a href="https://the-12-barcodes-api.onrender.com/swagger-ui"
+						target="_blank">"/swagger-ui"</a>, a user-friendly
 					interface generated by Swagger/OpenAPI tools that allows developers and users to interact with and
 					explore an API <strong>directly from the web browser</strong>.
 				</p>
@@ -269,6 +285,24 @@
 					<li>Done</li>
 				</ol>
 				</p>
+
+				<h2 class="major">Educational Purposes</h2>
+				<p>
+					This API relies on free resources as it was made for small-scale requests. This is because it was
+					intended to serve as a personal educational project to improve coding skills. I crafted the idea
+					and built it on my own. So I kindly ask you to be patient about it.
+				</p>
+				<p>
+					I harvested valuable knowledge from coding this on my own and doing research. I learned a lot and
+					choose to keep it open and public for anyone interested in checking out the code and the overall
+					system.
+				</p>
+				<p>
+					Best regards,
+				</p>
+				<p>
+					<em>Barbara Calderon.</em>
+				</p>
 			</article>
 
 			<!-- Contact -->
@@ -295,16 +329,20 @@
 					</ul>
 				</form>
 				<ul class="icons">
-					<li><a href="https://www.linkedin.com/in/barbaracalderondev/" class="icon brands fa-linkedin" target="_blank"><span class="label">Linkedin</span></a></li>
-					<li><a href="https://github.com/barbaracalderon" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-					<li><a href="https://twitter.com/bederoni" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+					<li><a href="https://www.linkedin.com/in/barbaracalderondev/" class="icon brands fa-linkedin"
+							target="_blank"><span class="label">Linkedin</span></a></li>
+					<li><a href="https://github.com/barbaracalderon" class="icon brands fa-github" target="_blank"><span
+								class="label">GitHub</span></a></li>
+					<li><a href="https://twitter.com/bederoni" class="icon brands fa-twitter" target="_blank"><span
+								class="label">Twitter</span></a></li>
 				</ul>
 			</article>
 		</div>
 
 		<!-- Footer -->
 		<footer id="footer">
-			<p class="copyright">&copy; Developer: <a href="https://github.com/barbaracalderon" target="_blank">Barbara Calderon</a>. Design: <a href="https://html5up.net" target="_blank">HTML5
+			<p class="copyright">&copy; Developer: <a href="https://github.com/barbaracalderon" target="_blank">Barbara
+					Calderon</a>. Design: <a href="https://html5up.net" target="_blank">HTML5
 					UP</a>. Images: <a href="https://unsplash.com" target="_blank">Unplash</a>. </p>
 		</footer>
 
