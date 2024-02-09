@@ -14,11 +14,15 @@ class JanController:
 
         if isinstance(barcode_tag, str):
             error_message = barcode_tag
-            error_formatted_response, status_code = self.__create_error_formatted_response(error_message)
+            error_formatted_response, status_code = (
+                self.__create_error_formatted_response(error_message)
+            )
             return error_formatted_response, status_code
-        
+
         buffered_image = self.__create_buffer_image(barcode_tag)
-        formatted_response, status_code = self.__create_formatted_response(buffered_image)
+        formatted_response, status_code = self.__create_formatted_response(
+            buffered_image
+        )
         return formatted_response, status_code
 
     def __create_jan_tag(self, product_number: str) -> str:
@@ -32,11 +36,15 @@ class JanController:
         return buffered_image
 
     def __create_formatted_response(self, buffered_image) -> Tuple[Dict, int]:
-        formatted_response, status_code = self.response_format_handler.format_response(buffered_image)
+        formatted_response, status_code = self.response_format_handler.format_response(
+            buffered_image
+        )
         return formatted_response, status_code
-    
+
     def __create_error_formatted_response(self, error_message: str) -> Tuple[Dict, int]:
-        error_formatted_response, status_code = self.response_format_handler.format_error_response(error_message)
+        error_formatted_response, status_code = (
+            self.response_format_handler.format_error_response(error_message)
+        )
         return error_formatted_response, status_code
 
     def get_data(self) -> Dict:
