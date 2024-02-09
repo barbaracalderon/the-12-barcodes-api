@@ -11,3 +11,4 @@ from models.drivers.jan_handler import JanHandler
 from models.drivers.ean_one_four_handler import EanOneFourHandler
 from models.drivers.gs_one_one_two_eight_handler import GsOneOneTwoEightHandler
 from models.drivers.response_format_handler import ResponseFormatHandler
+from models.drivers.buffered_image_handler import BufferedImageHandler
