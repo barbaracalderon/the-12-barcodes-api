@@ -18,10 +18,10 @@ class Barcode(MethodView):
 
     @blp.arguments(EanOneThreeSchema)
     def post(self, barcode_data):
-        response = self.ean_one_three_controller.create(
+        response, status_code = self.ean_one_three_controller.create(
             barcode_data.get("product_number")
         )
-        return response, 201
+        return response, status_code
 
     def get(self):
         response = self.ean_one_three_controller.get_data()

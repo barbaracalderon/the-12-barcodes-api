@@ -18,8 +18,10 @@ class Barcode(MethodView):
 
     @blp.arguments(IsbnTenSchema)
     def post(self, barcode_data):
-        response = self.isbn_ten_controller.create(barcode_data.get("product_code"))
-        return response, 201
+        response, status_code = self.isbn_ten_controller.create(
+            barcode_data.get("product_code")
+        )
+        return response, status_code
 
     def get(self):
         response = self.isbn_ten_controller.get_data()

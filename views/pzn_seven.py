@@ -18,8 +18,10 @@ class Barcode(MethodView):
 
     @blp.arguments(PznSevenSchema)
     def post(self, barcode_data):
-        response = self.pzn_seven_controller.create(barcode_data.get("product_number"))
-        return response, 201
+        response, status_code = self.pzn_seven_controller.create(
+            barcode_data.get("product_number")
+        )
+        return response, status_code
 
     def get(self):
         response = self.pzn_seven_controller.get_data()

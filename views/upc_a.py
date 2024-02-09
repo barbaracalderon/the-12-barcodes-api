@@ -18,8 +18,10 @@ class Barcode(MethodView):
 
     @blp.arguments(UpcASchema)
     def post(self, barcode_data):
-        response = self.upc_a_controller.create(barcode_data.get("product_number"))
-        return response, 201
+        response, status_code = self.upc_a_controller.create(
+            barcode_data.get("product_number")
+        )
+        return response, status_code
 
     def get(self):
         response = self.upc_a_controller.get_data()

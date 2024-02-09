@@ -18,10 +18,10 @@ class Barcode(MethodView):
 
     @blp.arguments(OneTwoEightSchema)
     def post(self, barcode_data):
-        response = self.one_two_eight_controller.create(
+        response, status_code = self.one_two_eight_controller.create(
             barcode_data.get("product_name")
         )
-        return response, 201
+        return response, status_code
 
     def get(self):
         response = self.one_two_eight_controller.get_data()

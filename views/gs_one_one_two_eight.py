@@ -15,15 +15,14 @@ blp = Blueprint(
 class Barcode(MethodView):
 
     def __init__(self):
-        self.gs_one_one_two_eight_controller = GsOneOneTwoEightController()
+        self.gs_one_one_two_controller = GsOneOneTwoEightController()
 
     @blp.arguments(GsOneOneTwoEightSchema)
     def post(self, barcode_data):
-        gs_one_one_two_eight_controller = GsOneOneTwoEightController()
-        response = gs_one_one_two_eight_controller.create(
+        response, status_code = self.gs_one_one_two_eight_controller.create(
             barcode_data.get("product_code")
         )
-        return response, 201
+        return response, status_code
 
     def get(self):
         response = self.gs_one_one_two_eight_controller.get_data()
