@@ -3,3 +3,4 @@ flask-smorest
 marshmallow
 python-dotenv
 python-barcode
+gunicorn
