@@ -1,5 +1,5 @@
 from typing import Dict
-from models.drivers import IssnHandler, ResponseFormatHandler
+from models.drivers import IssnHandler, BufferedImageHandler, ResponseFormatHandler
 from models import IssnModel
 from flask import jsonify
 
@@ -7,15 +7,25 @@ from flask import jsonify
 class IssnController:
 
     def create(self, product_code: str) -> Dict:
-        tag_path = self.__create_issn_tag(product_code)
-        response_format_handler = ResponseFormatHandler()
-        formatted_response = response_format_handler.format_response(tag_path)
+        barcode_tag = self.__create_issn_tag(product_code)
+        buffered_image = self.__create_buffer_image(barcode_tag)
+        formatted_response = self.__create_formatted_response(buffered_image)
         return formatted_response
 
     def __create_issn_tag(self, product_code: str) -> str:
         issn_handler = IssnHandler()
         tag_name = issn_handler.create_issn_barcode(product_code)
         return tag_name
+
+    def __create_buffer_image(self, barcode_tag):
+        buffered_image_handler = BufferedImageHandler()
+        buffered_image = buffered_image_handler.create_buffer_image(barcode_tag)
+        return buffered_image
+
+    def __create_formatted_response(self, buffered_image):
+        response_format_handler = ResponseFormatHandler()
+        formatted_response = response_format_handler.format_response(buffered_image)
+        return formatted_response
 
     def get_data(self) -> Dict:
         issn_model = IssnModel()
