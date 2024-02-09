@@ -1,0 +1,5 @@
+flask
+flask-smorest
+marshmallow
+python-dotenv
+python-barcode
