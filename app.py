@@ -20,7 +20,6 @@ def create_app():
     @app.get("/")
     def main():
         return render_template("index.html")
-    
 
     app.config["PROPAGATE_EXCEPTIONS"] = True
     app.config["API_TITLE"] = "12 Barcodes API Dev"
@@ -48,8 +47,3 @@ def create_app():
     api.register_blueprint(GsOneOneTwoEightBlueprint)
 
     return app
-
-
-if __name__ == "__main__":
-    app = create_app()
-    app.run(debug=True)

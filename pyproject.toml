@@ -11,6 +11,7 @@ python-barcode = "^0.15.1"
 flask-smorest = "^0.42.3"
 pillow = "^10.2.0"
 python-dotenv = "^1.0.1"
+gunicorn = "^21.2.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
