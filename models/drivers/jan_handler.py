@@ -4,5 +4,9 @@ from barcode.writer import ImageWriter
 
 class JanHandler:
     def create_jan_barcode(self, product_number: str) -> str:
-        tag = JapanArticleNumber(jan=product_number, writer=ImageWriter())
-        return tag
+        try:
+            tag = JapanArticleNumber(jan=product_number, writer=ImageWriter())
+            return tag
+        except Exception as e:
+            error_message = str(e)
+            return error_message

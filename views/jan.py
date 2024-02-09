@@ -18,8 +18,8 @@ class Barcode(MethodView):
 
     @blp.arguments(JanSchema)
     def post(self, barcode_data):
-        response = self.jan_controller.create(barcode_data.get("product_number"))
-        return response, 201
+        response, status_code = self.jan_controller.create(barcode_data.get("product_number"))
+        return response, status_code
 
     def get(self):
         response = self.jan_controller.get_data()
