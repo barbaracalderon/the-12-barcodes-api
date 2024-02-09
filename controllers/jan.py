@@ -14,8 +14,8 @@ class JanController:
 
         if isinstance(barcode_tag, str):
             error_message = barcode_tag
-            error_formatted_response = self.__create_error_formatted_response(error_message)
-            return error_formatted_response
+            error_formatted_response, status_code = self.__create_error_formatted_response(error_message)
+            return error_formatted_response, status_code
         
         buffered_image = self.__create_buffer_image(barcode_tag)
         formatted_response, status_code = self.__create_formatted_response(buffered_image)
