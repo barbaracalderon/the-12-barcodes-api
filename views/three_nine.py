@@ -19,7 +19,7 @@ class Barcode(MethodView):
     @blp.arguments(ThreeNineSchema)
     def post(self, barcode_data):
         response, status_code = self.three_nine_controller.create(
-            barcode_data.get("product_name")
+            barcode_data.get("product_data")
         )
         return response, status_code
 

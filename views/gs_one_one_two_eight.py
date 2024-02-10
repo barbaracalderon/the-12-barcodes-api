@@ -20,7 +20,7 @@ class Barcode(MethodView):
     @blp.arguments(GsOneOneTwoEightSchema)
     def post(self, barcode_data):
         response, status_code = self.gs_one_one_two_eight_controller.create(
-            barcode_data.get("product_code")
+            barcode_data.get("product_data")
         )
         return response, status_code
 

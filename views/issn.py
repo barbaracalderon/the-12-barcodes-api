@@ -19,7 +19,7 @@ class Barcode(MethodView):
     @blp.arguments(IssnSchema)
     def post(self, barcode_data):
         response, status_code = self.issn_controller.create(
-            barcode_data.get("product_code")
+            barcode_data.get("product_data")
         )
         return response, status_code
 
