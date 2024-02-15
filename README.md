@@ -89,7 +89,7 @@ gunicorn --bind "0.0.0.0:80" wsgi:app
 
 ## Improvements
 
-Implementing **tests** for this project will significantly enhance its reliability and stability. With the test directory already set up using Poetry and pytest, we there is a foundation for creating comprehensive test suites. Hopefully they will be coming soon to further strengthen the project's robustness and maintainability.
+Implementing **tests** for this project will significantly enhance its reliability and stability. With the test directory already set up using Poetry and pytest, we think there is a foundation for creating comprehensive test suites. Hopefully they will be coming soon to further strengthen the project's robustness and maintainability.
 ## Contributions
 
 Encouraging contributions from the community is vital for the success and growth of any project. We could greatly improve by adopting tests.
