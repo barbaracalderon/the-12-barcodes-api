@@ -1,9 +1,9 @@
 
 # The 12 Barcodes API
 
-[**The 12 Barcodes API**](https://the-12-barcodes-api.onrender.com/) is a user-friendly RESTful API designed to provide a simple and practical solution for generating barcodes in applications. Developed in the Flask ecosystem and adopting the MVC architecture, this API offers ease of integration and flexibility. It forgoes the traditional database setup, streamlining the development process and reducing complexity.
+[**The 12 Barcodes API**](https://the-12-barcodes-api.onrender.com/) is a user-friendly RESTful API designed to provide a simple and practical solution for generating barcodes in applications. Developed in the Flask ecosystem and adopting the MVC architecture, this API offers ease of integration and flexibility. It forgoes the traditional database setup, streamlining the development process and reducing complexity. Checkout  [**The 12 Barcodes API Swagger**](https://the-12-barcodes-api.onrender.com/swagger-ui) documentation.
 
-This API may be of particular interest to **developers, event organizers, manufacturers and suppliers, library technicians and archivists, students and educators**.
+This API may be of particular interest to **developers, event organizers, manufacturers and suppliers, library technicians and archivists, students and educators**. 
 
 ![The 12 Barcodes API landing page](page.png)
 ## Author
@@ -98,7 +98,7 @@ Encouraging contributions from the community is vital for the success and growth
 
 **Submitting Pull Requests**: We welcome contributions in the form of code fixes or improvements to existing functionality. If you'd like to contribute code, please submit a pull request on GitHub. Please include documentation for any changes you propose.
 
-## Licença
+## License
 
 [GNU General Public Licence v3.0](https://choosealicense.com/licenses/gpl-3.0/)
 
