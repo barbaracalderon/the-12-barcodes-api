@@ -19,7 +19,7 @@ I'm Barbara Calderon, a software developer from Brazil.
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/barbaracalderon/the-12-barcodes-api
+git clone git@github.com:barbaracalderon/the-12-barcodes-api.git
 ```
 
 ### 2. Enter the project directory
